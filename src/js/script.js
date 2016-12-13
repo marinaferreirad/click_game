@@ -93,6 +93,75 @@ for (var i = 0; i < tabs.length; i++){
 
 
 
+
+// Variables objets :
+
+var van = new Object();
+van.price = 50; // prix du van : 50ℂ
+van.number = 0; // nombre de vans possédés
+van.happiness = -2; // -2 de point de bonheur
+van.inhabitant = 2; // 2 habitant par van
+van.earning = 2; // on gagne 2ℂ par clic
+
+var hut = new Object();
+hut.price = 500;
+hut.number = 0;
+hut.happiness = 0;
+hut.inhabitant = 3;
+hut.earning = 3; 
+
+var small_house = new Object();
+small_house.price = 2500;
+small_house.number = 0;
+small_house.happiness = 1;
+small_house.inhabitant = 4;
+small_house.earning = 4; 
+
+var hlm = new Object();
+hlm.price = 5000;
+hlm.number = 0;
+hlm.happiness = -5;
+hlm.inhabitant = 60;
+hlm.earning = 60; 
+
+var house_garden = new Object();
+house_garden.price = 62500;
+house_garden.number = 0;
+house_garden.happiness = 10;
+house_garden.inhabitant = 4;
+house_garden.earning = 8; 
+
+var allotment = new Object();
+allotment.price = 300000;
+allotment.number = 0;
+allotment.happiness = 0;
+allotment.inhabitant = 50;
+allotment.earning = 50; 
+
+
+
+//Hover Propriétés :
+
+
+
+//Compteur du nombre d'habitants :
+var inhabitant = 0;
+
+van.inhabitant + hut.inhabitant + small_house.inhabitant;
+
+
+/*
+
+var buy_van = document.getElementById('img_van');
+var van_properties = document.getElementById('van_properties')
+
+
+
+
+/*
+
+
+
 /* JSON LOGEMENTS */ 
 
 var accomodation_dtb;

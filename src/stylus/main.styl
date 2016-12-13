@@ -1,15 +1,18 @@
 $bg = #7b6959
-$grey = rgba(39, 39, 39, 0.78)
+$grey = rgb(39, 39, 39)
 $grey_light = rgba(147, 147, 147, 0.74)
 $text = #ffffff
 
 body
+	background: url(https://0.s3.envato.com/files/165329171/City_Background_4267x2133.jpg) no-repeat  fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: 100% 70%;
+	background-color : $bg
 	margin: 0
 	padding: 0
-	font-family: 'Robotto', sans-serif;
+	font-family: 'Circula', sans-serif;
 	font-size: 32pt
 	font-weight: normal
-	background: $bg
 
 
 .main {
@@ -17,22 +20,30 @@ body
 	margin: 20 auto;
 }
 
-h4{
-	text-align: center
-	font-size: 25px
-	margin-top = 20px
-}
 
 button {
-	width: 25%
-	height: 45%
-	display: block
-	margin: auto
-	font-size: 20px
-	border-radius: 50%
-	border: 1px solid #e07272
-	background-color: #ac3f3f
+	width: 130px
+	height: 250px
+	display: inline-block
+	background-color: rgba(255, 255, 255, 0)
 	cursor: pointer
+}
+
+#clickme img{
+	width : 150px
+	height : auto
+}
+
+.bag{
+	width : 100px
+	height : 100 px
+	display : inline-block
+	margin : 20px 20px
+}
+
+.bag img{
+	width : 100px
+	height : auto
 }
 
 
@@ -58,12 +69,22 @@ button {
 }
 
 
+
+.footer{
+	position : absolute;
+	width : 100%
+	bottom : 0
+}
+
+
 /*Tabs*/
 
 ul.tabs{
-	width : 200px
+	width : 100px
 	height : 200px;
+	margin-left : 150px
 	float : left
+	z-index : 8
 }
 
 .tabs li {
@@ -79,33 +100,37 @@ ul.tabs{
 
 .tabs a {
 	width : 100px
-	height : 100px
-	display: inline-block;
+	height : 125px
+	display: block;
 	float : right
-	background-color: $grey
+	background-color: $grey_light
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	border-radius : 2%
-	padding-top : 5px
-	text-align : center
+	padding-top : 45%
+	padding-left :3px;
+	text-align : left
 	font-size : 12px
 	color : $text
-	
+	border-radius : 5%
+	text-decoration : none
 }
 
 .tabs .active a{
-  background-color: $grey_light;
+  background-color: $grey
+  text-decoration : underline
 }
 
 .tabs-content{
-  position: relative;
   width : 830px;
-  margin : auto;
+  height : 250px;
+  margin : 0;
+  overflow:auto;
   z-index: 3;
   padding: 20px;
   background-color: $grey
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border-radius : 2%
-  margin-bottom: 20px;
+  float : left;
 }
 
 .tab-content{
@@ -125,7 +150,7 @@ ul.tabs{
 /* Grid */
 
 #grid{
-	width: 900px;
+	width: 800px;
 	margin: 0 auto;
 	overflow: auto;
 }
@@ -157,11 +182,11 @@ li img:hover {
 
 .properties{
 	width: 100px;
-	height: 150px;
+	height: 70px;
 	margin-left: 10px;
 	margin-right: 10px;
 	font-size: 12px;
-	display: none;
+	display: inline-block;
 }
 
 #van_properties , #hut_properties , #small_house_properties , #hlm_properties , #house_garden_properties , #allotment_properties{
