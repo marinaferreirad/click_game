@@ -1,55 +1,125 @@
-body {
-	margin: 0;
-	padding: 0;
+$bg = #7b6959
+$grey = rgba(39, 39, 39, 0.78)
+$grey_light = rgba(147, 147, 147, 0.74)
+$text = #ffffff
+
+body
+	margin: 0
+	padding: 0
 	font-family: 'Robotto', sans-serif;
-	font-size: 32pt;
-	font-weight: normal;
-	background: #bca68e;
-}
+	font-size: 32pt
+	font-weight: normal
+	background: $bg
+
 
 .main {
 	height: 300px;
-	margin: 0 auto;
+	margin: 20 auto;
 }
 
 h4{
-	text-align: center;
-	font-size: 25px;
+	text-align: center
+	font-size: 25px
+	margin-top = 20px
 }
 
 button {
-	width: 25%;
-	height: 45%;
-	display: block;
-	margin: auto;
-	font-size: 20pt;
-	border-radius: 50%;
-	border: 1px solid #e07272;
-	background-color: #ac3f3f;
-	cursor: pointer;
+	width: 25%
+	height: 45%
+	display: block
+	margin: auto
+	font-size: 20px
+	border-radius: 50%
+	border: 1px solid #e07272
+	background-color: #ac3f3f
+	cursor: pointer
 }
 
 
 /* STATS */
 
 .stats{
-	display: block;
-	width: 80%;
-	margin: auto;
-	font-size: 15px;
+	display: block
+	width: 80%
+	margin-top : 20px
+	font-size: 15px
 }
 
 .column_1{
-	display: inline-block;
-	width: 49%;
-	text-align: center;
+	display: inline-block
+	width: 49%
+	text-align: center
 }
 
 .column_2{
-	display: inline-block;
-	width: 49%;
-	text-align: center;
+	display: inline-block
+	width: 49%
+	text-align: center
 }
+
+
+/*Tabs*/
+
+ul.tabs{
+	width : 200px
+	height : 200px;
+	float : left
+}
+
+.tabs li {
+  float: left;
+  display: block;
+}
+
+.tabs:after{
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+.tabs a {
+	width : 100px
+	height : 100px
+	display: inline-block;
+	float : right
+	background-color: $grey
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius : 2%
+	padding-top : 5px
+	text-align : center
+	font-size : 12px
+	color : $text
+	
+}
+
+.tabs .active a{
+  background-color: $grey_light;
+}
+
+.tabs-content{
+  position: relative;
+  width : 830px;
+  margin : auto;
+  z-index: 3;
+  padding: 20px;
+  background-color: $grey
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius : 2%
+  margin-bottom: 20px;
+}
+
+.tab-content{
+  display: none;
+}
+
+.tab-content.active{
+  display: block;
+}
+
+#public_buildings{
+	display = block;
+}
+
 
 
 /* Grid */
@@ -66,7 +136,7 @@ ul {
  
 li img {
 	float: left;
-	margin: 10px;
+	margin: 15px;
 	padding: 5px auto;
 	border: 2px solid #fff;
 	width: 100px;
