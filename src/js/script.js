@@ -32,8 +32,9 @@ function recovering_taxes() {
   var intervalTaxes = setInterval(newTaxes, 100);
 }
 
+var one = 0;
 button.onclick = function() {
-	var one = 1;
+	one++;
     total_earning = total_houses_earning + one;
 	original_earning.innerHTML = "Original Earning (+1ℂ) : " + one + "ℂ";
     houses_earning.innerHTML = "Houses Earning (+1ℂ) : " + total_houses_earning + "ℂ";
