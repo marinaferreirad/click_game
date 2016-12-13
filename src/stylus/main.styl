@@ -1,12 +1,12 @@
-$bg = #7b6959
-$grey = rgba(39, 39, 39, 0.88)
-$grey_light = rgba(147, 147, 147, 0.83)
+$bg = #ab9d7c
+$grey = rgba(96, 90, 76, 0.89)
+$grey_light = rgba(123, 127, 102, 0.93)
 $text = #ffffff
 
 body
 	background: url(https://0.s3.envato.com/files/165329171/City_Background_4267x2133.jpg) no-repeat  fixed;
 	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-	background-size: 100% 70%;
+	background-size: 100% 65%;
 	background-color : $bg
 	margin: 0
 	padding: 0
@@ -22,28 +22,37 @@ body
 
 
 button {
-	width: 130px
-	height: 250px
+	width: 150px
+	height: 180px
+	padding-left : 50px;
 	display: inline-block
 	background-color: rgba(255, 255, 255, 0)
 	cursor: pointer
+	margin-left : 30px
 }
 
 #clickme img{
-	width : 150px
+	width : 100px
 	height : auto
+	margin-left : 20px;
 }
 
 .bag{
 	width : 100px
-	height : 100px
+	height : 150px
 	display : inline-block
-	margin : 20px 20px
+	margin : 40px 80px 10px 20px 
+	float : right 
 }
 
 .bag img{
 	width : 100px
 	height : auto
+}
+
+.bag a{
+	font-size : 18px
+	text-align : center
 }
 
 
@@ -73,6 +82,7 @@ button {
 .footer{
 	position : absolute;
 	width : 100%
+	height : 250px
 	bottom : 0
 }
 
@@ -81,8 +91,8 @@ button {
 
 ul.tabs{
 	width : 100px
-	height : 200px;
-	margin-left : 150px
+	height : 190px;
+	margin-left : 100px
 	float : left
 	z-index : 8
 }
@@ -99,14 +109,14 @@ ul.tabs{
 }
 
 .tabs a {
-	width : 100px
-	height : 125px
+	width : 85px
+	height : 98px
 	display: block;
 	float : right
 	background-color: $grey_light
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	border-radius : 2%
-	padding-top : 45%
+	border-radius : 5%
+	padding-top : 35%
 	padding-left :3px;
 	text-align : center
 	font-size : 20px
@@ -115,14 +125,22 @@ ul.tabs{
 	text-decoration : none
 }
 
+.menu_content{
+	width : 80%
+	background-color: #rgba(141, 230, 224, 0.81)
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius : 2%
+	padding : 5px
+}
+
 .tabs .active a{
   background-color: $grey
 }
 
 .tabs-content{
   width : 830px;
-  height : 250px;
-  margin : 0;
+  height : 200px;
+  bottom : 0;
   overflow:auto;
   z-index: 3;
   padding: 20px;
@@ -130,6 +148,7 @@ ul.tabs{
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border-radius : 3%
   float : left;
+  display : inline-block
 }
 
 .tab-content{
@@ -175,8 +194,8 @@ li img {
 }
  
 li img:hover {
-	-webkit-box-shadow: 0px 0px 2px rgba(255,255,255,0.9);
-	box-shadow: 0px 0px 7px rgba(216, 92, 92, 0.9);
+	-webkit-box-shadow: 2px 2px 10px rgba(255,255,255,0.9);
+	box-shadow: 5px 5px 10px rgba(216, 92, 92, 0.93);
 }
 
 .properties{
