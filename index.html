@@ -1,241 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>click_game</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/main.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>click_game</title>
+		<link rel="stylesheet" href="src/css/reset.css">
+		<link rel="stylesheet" href="src/css/main.css">
+	</head>
 
-<body>
-  <div class="main">
-		
-		<div class="stats">
-			<div class="column_1">
-				<div>
-					<p id="original_earning">Original Earning (+1ℂ) :</p>
+	<body>
+		<div class="main">
+
+			<div class="stats">
+				<div class="column_1">
+					<div>
+						<p id="original_earning">Original Earning (+1ℂ) :</p>
+					</div>
+					<div>
+						<p id="houses_earning">Houses Earning :</p>
+					</div>
+					<div>
+						<p id="buildings_earning">Buildings Earning :</p>
+					</div>
 				</div>
-				<div>
-					<p id="houses_earning">Houses Earning :</p>
-				</div>
-				<div>
-					<p id="buildings_earning">Buildings Earning :</p>
-				</div>
-				</div>
-				
+
 				<div class="column_2">
 					<div>
 						<p id="money">Money :</p>
 					</div>
 					<div>
-					<p id="inhabitant">Inhabitant :</p>
-				</div>
-				<div>
-					<p id="happiness">Happiness :</p>
-				</div>
-					
-				</div>
-		</div>
-		
-		
-		<div class="footer">
-		
-		<div class="menu_content">
-			<ul class="tabs">
-				<li class="active">
-					<a href="#housing">Housing</a>
-				</li>
-				<li><a href="#public_buildings">Public Buildings</a></li>
-			</ul>
-			
-			<div class="tabs-content">
+						<p id="inhabitant">Inhabitant :</p>
+					</div>
+					<div>
+						<p id="happiness">Happiness :</p>
+					</div>
 
-				<div id="housing" class="active tab-content">
-
-					<ul id="grid">
-						<li>
-						<a href="#"><img src="ressources/icone_van.png" id="img_van"></a>
-						</li>
-						<li><a href="#"><img src="ressources/icone_cabane.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_maisonnette.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_hlm.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_maison_jardin.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_lotissement.png"></a></li>
-
-						<div class="properties">
-						<p id="van_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hut_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="small_house_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hlm_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="house_garden_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="allotment_properties">Properties :</p>
-						</div>
-
-						<li><a href="#"><img src="ressources/icone_immeuble.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_villa.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_building.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_gratte_ciel.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_palace.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_chateau.png"></a></li>
-						
-						<div class="properties">
-						<p id="van_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hut_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="small_house_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hlm_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="house_garden_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="allotment_properties">Properties :</p>
-						</div>
-					</ul>
-				</div>
-				
-				<div id="public_buildings" class="active tab-content">
-
-					<ul id="grid">
-						
-						<li><a href="#"><img src="ressources/icone_route.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_petit_commerce.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_ecole.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_arret_bus.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_restaurant.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_commissariat.png"></a></li>
-
-						<div class="properties">
-						<p id="van_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hut_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="small_house_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hlm_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="house_garden_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="allotment_properties">Properties :</p>
-						</div>
-
-						<li><a href="#"><img src="ressources/icone_eclairage_publique.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_hopital.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_hotel.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_concessionaire.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_caserne.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_prison.png"></a></li>
-						
-						<div class="properties">
-						<p id="van_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hut_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="small_house_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hlm_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="house_garden_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="allotment_properties">Properties :</p>
-						</div>
-						
-						<li><a href="#"><img src="ressources/icone_piscine.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_eglise.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_centre_commercial.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_gare.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_boite.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_station_metro.png"></a></li>
-						
-						<div class="properties">
-						<p id="van_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hut_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="small_house_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hlm_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="house_garden_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="allotment_properties">Properties :</p>
-						</div>
-						
-						<li><a href="#"><img src="ressources/icone_maison_close.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_monument.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_centre_affaire.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_fibre.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_zoo.png"></a></li>
-						<li><a href="#"><img src="ressources/icone_aeroport.png"></a></li>
-						
-						<div class="properties">
-						<p id="van_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hut_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="small_house_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="hlm_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="house_garden_properties">Properties :</p>
-						</div>
-						<div class="properties">
-						<p id="allotment_properties">Properties :</p>
-						</div>
-					</ul>
-				</div>
 				</div>
 			</div>
-			
-		<button id="clickme">
-			<img src="ressources/avatar.png" alt="avatar">
-		</button>
-		<div class="bag">
-		<a href="" target="_blank">Buy Items
-		<img src="ressources/shopping_bag.png" alt="buy for real">
-		</a>
-			
-			
+
+
+			<div class="footer">
+
+				<div class="menu_content">
+					<ul class="tabs">
+						<li class="active">
+							<a href="#housing">Housing</a>
+						</li>
+						<li><a href="#public_buildings">Public Buildings</a></li>
+					</ul>
+
+					<div class="tabs-content">
+
+						<div id="housing" class="active tab-content">
+
+							<ul id="grid">
+								<li><a href="#"><img src="ressources/icone_van.png" id="img_van" id="van" class="private"></a></li>
+								<li><a href="#"><img src="ressources/icone_cabane.png" id="hut" class="private"></a></li>
+								<li><a href="#"><img src="ressources/icone_maisonnette.png" id="small_house" class="private"></a></li>
+								<li><a href="#"><img src="ressources/icone_hlm.png" id="hlm" class="private"></a></li>
+								<li><a href="#"><img src="ressources/icone_maison_jardin.png" id="house_garden" class="private"></a></li>
+								<li><a href="#"><img src="ressources/icone_lotissement.png" id="allotment" class="private"></a></li>
+
+								<div class="properties">
+									<p id="van_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hut_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="small_house_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hlm_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="house_garden_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="allotment_properties">Properties :</p>
+								</div>
+
+								<li><a href="#"><img src="ressources/icone_immeuble.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_villa.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_building.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_gratte_ciel.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_palace.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_chateau.png"></a></li>
+
+								<div class="properties">
+									<p id="van_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hut_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="small_house_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hlm_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="house_garden_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="allotment_properties">Properties :</p>
+								</div>
+							</ul>
+						</div>
+
+						<div id="public_buildings" class="active tab-content">
+
+							<ul id="grid">
+
+								<li><a href="#"><img src="ressources/icone_route.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_petit_commerce.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_ecole.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_arret_bus.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_restaurant.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_commissariat.png"></a></li>
+
+								<div class="properties">
+									<p id="van_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hut_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="small_house_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hlm_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="house_garden_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="allotment_properties">Properties :</p>
+								</div>
+
+								<li><a href="#"><img src="ressources/icone_eclairage_publique.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_hopital.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_hotel.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_concessionnaire.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_caserne.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_prison.png"></a></li>
+
+								<div class="properties">
+									<p id="van_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hut_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="small_house_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hlm_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="house_garden_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="allotment_properties">Properties :</p>
+								</div>
+
+								<li><a href="#"><img src="ressources/icone_piscine.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_eglise.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_centre_commercial.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_gare.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_boite.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_station_metro.png"></a></li>
+
+								<div class="properties">
+									<p id="van_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hut_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="small_house_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hlm_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="house_garden_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="allotment_properties">Properties :</p>
+								</div>
+
+								<li><a href="#"><img src="ressources/icone_maison_close.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_monument.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_centre_affaire.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_fibre.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_zoo.png"></a></li>
+								<li><a href="#"><img src="ressources/icone_aeroport.png"></a></li>
+
+								<div class="properties">
+									<p id="van_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hut_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="small_house_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="hlm_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="house_garden_properties">Properties :</p>
+								</div>
+								<div class="properties">
+									<p id="allotment_properties">Properties :</p>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<button id="clickme">
+					<img src="ressources/avatar.png" alt="avatar">
+				</button>
+				<div class="bag">
+					<a href="" target="_blank">Buy Items
+						<img src="ressources/shopping_bag.png" alt="buy for real">
+					</a>
+
+
+				</div>
+			</div>
 		</div>
-		</div>
-	  </div>
-  
-<script src="src/js/script.js"></script>
-  
-</body>
+
+		<script src="src/js/script.js"></script>
+
+	</body>
 </html>
